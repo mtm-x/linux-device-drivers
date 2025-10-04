@@ -3,10 +3,11 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("THAMARAI");
+MODULE_DESCRIPTION("FIRST loadable kernel module");
 
 static int lotus_init(void){
 
-    printk("HELLLL");
+    printk("HELLLL \n");
     return 0;
 }
 
