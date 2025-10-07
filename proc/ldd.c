@@ -9,7 +9,16 @@ MODULE_DESCRIPTION("Lotus /proc loadable driver module");
 
 static struct proc_dir_entry *custom_proc_node;
 
-static struct proc_ops custom_proc_ops = {};
+static ssize_t	lotus_read(struct file* fileptr, char  *user_space_buf, size_t count, loff_t* offset){
+    printk("lotus_read");
+    return 0;
+}
+
+
+struct proc_ops custom_proc_ops = {
+    .proc_read = lotus_read
+
+};
 
 
 static int lotus_module_init(void){
