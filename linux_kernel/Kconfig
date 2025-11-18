@@ -1,0 +1,5 @@
+config LOTUS_MYCDEV
+    tristate "Thamarai's Character driver"
+    default m
+    help
+        Say Y here to support /dev/mycdev char device.

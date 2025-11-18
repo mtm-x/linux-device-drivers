@@ -1,0 +1,1 @@
+obj-$(CONFIG_LOTUS_MYCDEV)	+= mychardev.o
