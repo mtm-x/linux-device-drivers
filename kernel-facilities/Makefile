@@ -5,7 +5,7 @@
 
 
 
-obj-$(CONFIG_PACKT_MYCDEV) := driver.o
+obj-m := $(SRC).o
 
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 
